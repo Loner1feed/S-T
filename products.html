@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/css/reset.css">
+    <link rel="stylesheet" href="./styles/css/fonts.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <link rel="stylesheet" href="./styles/css/media.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <div class="popups">
+        <div class="wrap popups__wrap">
+            <div class="popup popup__decline">
+                <div class="popup__inner">
+                    <h5 class="popup__title">Вы действительно хотите отменить заказ?</h5>
+
+                    <div class="popup__optBlock">
+
+                        <span class="popup__heading">Укажите причину по которой хотите отменить заказ?</span>
+
+                        <div class="popup__opt">
+                            <input type="radio" name="decline-opt" id="decline-opt-1" checked>
+                            <label for="decline-opt-1">
+                                <span>Нет свободных столиков на эту дату и время</span>
+                                <i class="icon-check"></i>
+                            </label>
+                        </div>
+
+
+                        <div class="popup__opt">
+                            <input type="radio" name="decline-opt" id="decline-opt-2">
+                            <label for="decline-opt-2">
+                                <span>Нет в наличии блюд</span>
+                                <i class="icon-check"></i>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="popup__buttons">
+                        <button class="button popup__button" onclick="popupClose()">Отменить</button>
+                        <button class="button popup__button button--accent" onclick="popupClose()">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+
+        <!-- header -->
+        <header class="header">
+            <div class="wrap header__wrap">
+                <nav class="header__nav">
+                    <a href="./index.html" class="header__link">Профиль</a>
+                    <a href="./reports.html" class="header__link">Отчёты</a>
+                    <a href="./products.html" class="header__link header__link--accent">Продукты</a>
+                    <a href="./orders.html" class="header__link">Заказы</a>
+                </nav>
+
+                <div class="header__buttons">
+                    <div class="language">
+                        <div class="language__heading">
+                            <i class="icon-language"></i>
+                            <span>Ru</span>
+                        </div>
+
+                        <div class="language__body">
+                            <span class="language__item">English</span>
+                            <span class="language__item language__item--active">Русский</span>
+                            <span class="language__item">Latine</span>
+                            <span class="language__item">Deutsche</span>
+                        </div>
+                    </div>
+
+                    <a href="javascript://" class="exit"><i class="icon-logout"></i></a>
+                </div>
+            </div>
+        </header>
+
+        
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="wrap footer__wrap">
+                <div class="footer__logo">Logo</div>
+
+                <div class="footer__nav">
+                    <a href="./index.html" class="footer__link">Профиль</a>
+                    <a href="./reports.html" class="footer__link">Отчёты</a>
+                    <a href="./products.html" class="footer__link">Продукты</a>
+                    <a href="./orders.html" class="footer__link">Заказы</a>
+                </div>
+
+                <span class="footer__copy">Copyright © 2020. LogoIpsum. All rights reserved.</span>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
